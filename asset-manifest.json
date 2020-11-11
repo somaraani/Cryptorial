@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/cryptorial/static/css/main.52a98377.chunk.css",
+    "main.js": "/cryptorial/static/js/main.26fe8091.chunk.js",
+    "main.js.map": "/cryptorial/static/js/main.26fe8091.chunk.js.map",
+    "runtime-main.js": "/cryptorial/static/js/runtime-main.1fc951a3.js",
+    "runtime-main.js.map": "/cryptorial/static/js/runtime-main.1fc951a3.js.map",
+    "static/css/2.3720a788.chunk.css": "/cryptorial/static/css/2.3720a788.chunk.css",
+    "static/js/2.c9d6179f.chunk.js": "/cryptorial/static/js/2.c9d6179f.chunk.js",
+    "static/js/2.c9d6179f.chunk.js.map": "/cryptorial/static/js/2.c9d6179f.chunk.js.map",
+    "index.html": "/cryptorial/index.html",
+    "static/css/2.3720a788.chunk.css.map": "/cryptorial/static/css/2.3720a788.chunk.css.map",
+    "static/css/main.52a98377.chunk.css.map": "/cryptorial/static/css/main.52a98377.chunk.css.map",
+    "static/js/2.c9d6179f.chunk.js.LICENSE.txt": "/cryptorial/static/js/2.c9d6179f.chunk.js.LICENSE.txt",
+    "static/media/blockchain.f9a1760d.jpg": "/cryptorial/static/media/blockchain.f9a1760d.jpg",
+    "static/media/economics.8d14d3db.jpg": "/cryptorial/static/media/economics.8d14d3db.jpg",
+    "static/media/hashing.cbc51e26.jpg": "/cryptorial/static/media/hashing.cbc51e26.jpg",
+    "static/media/mining.eac784fc.jpg": "/cryptorial/static/media/mining.eac784fc.jpg",
+    "static/media/index.css": "/cryptorial/static/media/roboto-vietnamese-400-normal.52cebac0.woff2",
+    "static/media/sample.61e356cf.jpg": "/cryptorial/static/media/sample.61e356cf.jpg",
+    "static/media/transaction.31c5eb05.PNG": "/cryptorial/static/media/transaction.31c5eb05.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fc951a3.js",
+    "static/css/2.3720a788.chunk.css",
+    "static/js/2.c9d6179f.chunk.js",
+    "static/css/main.52a98377.chunk.css",
+    "static/js/main.26fe8091.chunk.js"
+  ]
+}
