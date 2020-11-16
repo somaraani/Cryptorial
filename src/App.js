@@ -30,7 +30,6 @@ const urlMap = {
   '/technology/hashing': 'Hashing',
   '/technology/sample': 'Sample Blockchain',
   '/economics': 'Economics',
-  '/economics/currencylist': 'Currency List'
 };
 
 const drawerWidth = 240;
@@ -144,7 +143,7 @@ function App() {
   return (
     <ThemeProvider theme={isDark ? darkmode : lightmode}>
       <CssBaseline />
-      <BrowserRouter initialEntries={['/']} initialIndex={0}>
+      <BrowserRouter basename={process.env.PUBLIC_URL + '/'}>
 
         <div className={classes.root}>
           <CssBaseline />
@@ -257,22 +256,19 @@ function App() {
 
 
               <ListItemLink to="/economics" onClick={() => setMenuOpen(false)} />
-              <List disablePadding>
-                <ListItemLink to="/blockchain/currencylist" className={classes.nested} onClick={() => setMenuOpen(false)} />
-              </List>
             </List>
             <Divider />
           </Drawer>
 
           <Container style={{ paddingTop: '100px', paddingBottom: '200px' }} className={clsx(classes.content, { [classes.contentShift]: menuOpen, })}>
             <Switch>
-              <Route path="/" component={Home} exact />
+              <Route exact path="/" component={Home}  />
               <Route path="/technology/blockchain" component={Blockchain} />
               <Route path="/technology/hashing" component={Hashing} />
               <Route path="/technology/mining" component={Mining} />
               <Route path="/technology/sample" component={Sample} />
               <Route path="/technology" component={Technology} />
-              <Route path="/economics" component={Economics} />
+              <Route path="/economics" component={() => <Economics isDark={isDark}/>} />
             </Switch>
           </Container>
         </div>

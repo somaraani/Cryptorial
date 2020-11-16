@@ -17,6 +17,14 @@
   color: antiquewhite;
 }
 
+.wrap {
+  word-wrap: break-word !important;
+}
+
+button {
+  text-transform: none !important;
+}
+
 .crumbs p, .crumbs p, .crumbs li {
   font-size: 25px !important;
 }

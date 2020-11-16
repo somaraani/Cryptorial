@@ -146,7 +146,7 @@ export class Sample extends React.Component {
           output (SHA-256)
             </Typography>
 
-        <Typography nowrap="false" className="hash" style={{ marginBottom: -30 }} variant="h5">
+        <Typography className="hash wrap"  variant="h5" style={{ marginBottom: -30}}>
           {this.state.hashValue}
         </Typography>
 
@@ -257,7 +257,7 @@ export function Mining() {
         output (SHA-256)
             </Typography>
 
-      <Typography nowrap="false" className="hash" variant="h5">
+      <Typography className="hash wrap" variant="h5">
         2c15326fa01fe0491f4f6f4f040f064b275395ef16f37724f14e01f75397071f
 
       </Typography>
@@ -283,7 +283,7 @@ export function Mining() {
           <li>User A to User B: 1 BTC</li>
           <li>User B to User C: 2 BTC</li>
           <li>User C to user D: 1 BTC</li>
-          <li><span className="highlight">Nonce: 38jvasde3avma</span></li>
+          <li><Typography color='primary'>Nonce: 38jvasde3avma</Typography></li>
         </ul>
       </Typography>
 
@@ -294,7 +294,7 @@ export function Mining() {
         output (SHA-256)
             </Typography>
 
-      <Typography nowrap="false" className="hash" variant="h5">
+      <Typography nowrap="false" className="hash wrap" variant="h5">
         00706c95522c813684861d2afcb9ec62d837bef458b6e895e3efe4aaa381a1b2
       </Typography>
 
@@ -343,7 +343,7 @@ export function Mining() {
       <br />
 
       <Typography variant="body1">
-        Although solving a the puzzle is very difficult, confirming the result is not. Once we have the "correct" nonce value, all we have to do is generate the SHA-256 hash of that block using that value, and we can verify
+        Although solving the puzzle is very difficult, confirming the result is not. Once we have the "correct" nonce value, all we have to do is generate the SHA-256 hash of that block using that value, and we can verify
         that the puzzle was solved correctly. Once a miner presents a solution to the block, every other miner will check this result to validate it. If the majority (51%) of the miners agree that the puzzle is solved,
         then it is added to the blockchain, and the miners will begin working on the next block.
       </Typography>
@@ -357,7 +357,7 @@ export function Mining() {
 
       <br />
 
-      <RouterLink to="/technology/sample">
+      <RouterLink style={{ textDecoration: 'none' }} to="/technology/sample">
         <Button variant="outlined" color="secondary">
           Create sample blockchain
             </Button>
@@ -378,9 +378,9 @@ export function Hashing() {
     <div>
       <Typography variant="body1">
         Before you can understand what mining is, you need to learn about hashing. Hashing is a process that encrypts data using a specified function. This function can be anything,
-                for example, imagine a hashing function where you just replace each letter with its place in the alphabet. Then the word <span className="highlight">hello</span> would become
-                <span className="highlight"> 8 5 12 12 15.</span> Lets take it a step further, and make our hashing function sum the numbers. Then the hash of <span className="highlight">hello</span> would be
-                <span className="highlight"> 52.</span> Notice now that if you change ANY letter in the word hello, you will have a completely different hash.
+                for example, imagine a hashing function where you just replace each letter with its place in the alphabet. Then the word <Typography display="inline" color='primary'>hello </Typography> would become
+                <Typography display="inline" color='primary'> 8 5 12 12 15.</Typography> Lets take it a step further, and make our hashing function sum the numbers. Then the hash of <Typography display="inline" color='primary'>hello</Typography> would be
+                <Typography display="inline" color='primary'> 52.</Typography> Notice now that if you change ANY letter in the word hello, you will have a completely different hash.
             </Typography>
 
       <br />
@@ -416,7 +416,7 @@ export function Hashing() {
         output (SHA-256)
             </Typography>
 
-      <Typography nowrap="false" className="hash" variant="h5">
+      <Typography className="hash wrap" variant="h5">
         {hashOut}
       </Typography>
 
@@ -429,7 +429,7 @@ export function Hashing() {
             </Typography>
       <br />
 
-      <RouterLink to="/technology/mining">
+      <RouterLink style={{ textDecoration: 'none' }} to="/technology/mining">
         <Button variant="outlined" color="secondary">
           Learn about mining
             </Button>
@@ -588,7 +588,7 @@ export function Blockchain() {
       <br />
 
       <Typography variant="body1">
-        This tells us that the user with ID <span className="highlight">bc1qw...</span> sent user <span className="highlight">3QJfg...</span> 0.18 BTC or $2,785.71 USD on 2020-11-08 08:14, and that <span className="highlight">bc1qw</span> received
+        This tells us that the user with ID <Typography display="inline" color='primary'>bc1qw...</Typography> sent user <Typography display="inline" color='primary'>3QJfg...</Typography> 0.18 BTC or $2,785.71 USD on 2020-11-08 08:14, and that <Typography display="inline" color='primary'>bc1qw</Typography> received
             1.685 BTC back (imagine this as paying at a grocery store and getting change back).
             </Typography>
 
@@ -602,7 +602,7 @@ export function Blockchain() {
 
       <br />
 
-      <RouterLink to="/technology/hashing">
+      <RouterLink style={{ textDecoration: 'none' }} to="/technology/hashing">
         <Button variant="outlined" color="secondary">
           Learn about hashing
             </Button>
