@@ -155,7 +155,7 @@ function App() {
             })}
           >
 
-<Toolbar>
+            <Toolbar>
               <IconButton
                 color="inherit"
                 aria-label="open drawer"
@@ -165,52 +165,48 @@ function App() {
               >
                 <MenuIcon />
               </IconButton>
+              <Container>
+                <Route>
+                  {({ location }) => {
+                    const pathnames = location.pathname.split('/').filter((x) => x);
 
-            <Container>
+                    if (location.pathname === "/") {
+                      return <p style={{ flexGrow: 1, float: "left" }}></p>;
+                    }
 
-            
-
-              <Route>
-                {({ location }) => {
-                  const pathnames = location.pathname.split('/').filter((x) => x);
-
-                  if (location.pathname === "/") {
-                    return <p style={{ flexGrow: 1, float: "left"}}></p>;
-                  }
-
-                  return (
-                    <Breadcrumbs style={{ flexGrow: 1, float: "left"}} className="crumbs" aria-label="breadcrumb">
-                      <LinkRouter color="inherit" to="/">
+                    return (
+                      <Breadcrumbs style={{ flexGrow: 1, float: "left" }} className="crumbs" aria-label="breadcrumb">
+                        <LinkRouter color="inherit" to="/">
 
 
-                        <Typography color="textPrimary" >
-                          Cryptorial
-                  </Typography>
-                      </LinkRouter>
-                      {pathnames.map((value, index) => {
-                        const last = index === pathnames.length - 1;
-                        const to = `/${pathnames.slice(0, index + 1).join('/')}`;
-
-                        return last ? (
-                          <Typography color="secondary" key={to}>
-                            {urlMap[to]}
+                          <Typography color="textPrimary" >
+                            Cryptorial
                           </Typography>
-                        ) : (
+                        </LinkRouter>
+                        {pathnames.map((value, index) => {
+                          const last = index === pathnames.length - 1;
+                          const to = `/${pathnames.slice(0, index + 1).join('/')}`;
+
+                          return last ? (
+                            <Typography color="secondary" key={to}>
+                              {urlMap[to]}
+                            </Typography>
+                          ) : (
                             <LinkRouter color="inherit" to={to} key={to}>
                               {urlMap[to]}
                             </LinkRouter>
                           );
-                      })}
-                    </Breadcrumbs>
-                  );
-                }}
-              </Route>
+                        })}
+                      </Breadcrumbs>
+                    );
+                  }}
+                </Route>
 
               </Container>
 
               <Tooltip title={(isDark ? "Light mode" : "Dark mode")}>
                 <IconButton
-                style={{float: "right"}}
+                  style={{ float: "right" }}
                   color="inherit"
                   aria-label="Switch theme"
                   onClick={switchDarkMode}
@@ -219,10 +215,7 @@ function App() {
                   <SettingsBrightnessIcon />
                 </IconButton>
               </Tooltip>
-              
-
             </Toolbar>
-            
           </AppBar>
 
 
@@ -262,13 +255,13 @@ function App() {
 
           <Container style={{ paddingTop: '100px', paddingBottom: '200px' }} className={clsx(classes.content, { [classes.contentShift]: menuOpen, })}>
             <Switch>
-              <Route exact path="/" component={Home}  />
+              <Route exact path="/" component={Home} />
               <Route path="/technology/blockchain" component={Blockchain} />
               <Route path="/technology/hashing" component={Hashing} />
               <Route path="/technology/mining" component={Mining} />
               <Route path="/technology/sample" component={Sample} />
               <Route path="/technology" component={Technology} />
-              <Route path="/economics" component={() => <Economics isDark={isDark}/>} />
+              <Route path="/economics" component={() => <Economics isDark={isDark} />} />
             </Switch>
           </Container>
         </div>
@@ -289,16 +282,16 @@ function Home() {
       </Typography>
 
       <Typography variant="body1" style={{ marginBottom: '20px' }}> Cryptocurrencies and other blockchain technologies have gained tremendous popularity in the last few years.
-      Cryptocurrencies are currencies that are completely digital, having no controlling local authority. Instead, the transactions
-      are handled by a public distributed ledger called a blockchain. Due to the security and anonymity provided by cryptocurrencies, their monitary value
-      has increased drastically, and is now traded by investors just like stocks. This application will teach you the basics of blockchain and the cryptocurrency market.
-      To fully understasnd cryptocurrencies, there are two main portions that need to be understood:
+        Cryptocurrencies are currencies that are completely digital, having no controlling local authority. Instead, the transactions
+        are handled by a public distributed ledger called a blockchain. Due to the security and anonymity provided by cryptocurrencies, their monitary value
+        has increased drastically, and is now traded by investors just like stocks. This application will teach you the basics of blockchain and the cryptocurrency market.
+        To fully understasnd cryptocurrencies, there are two main portions that need to be understood:
       </Typography>
 
       <Grid container alignItems="stretch">
         <Grid item component={Card} style={{ margin: 16 }} md >
           <CardActionArea >
-            <RouterLink to="/technology" style={{ textDecoration: 'none', color: 'inherit'}}>
+            <RouterLink to="/technology" style={{ textDecoration: 'none', color: 'inherit' }}>
               <CardMedia
                 style={{ height: 200 }}
                 image={blockchainImg}
@@ -334,7 +327,7 @@ function Home() {
 
                 <Typography variant="body2" color="textSecondary" component="p">
                   This section introduces the economics of cryptocurrencies including an index of existing cryptocurrencies, and definitions of some of the most used terms.
-               </Typography>
+                </Typography>
               </CardContent>
             </RouterLink>
           </CardActionArea>
