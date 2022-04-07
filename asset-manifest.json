@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Cryptorial/static/css/main.fe90ba41.chunk.css",
-    "main.js": "/Cryptorial/static/js/main.88c41b2b.chunk.js",
-    "main.js.map": "/Cryptorial/static/js/main.88c41b2b.chunk.js.map",
+    "main.js": "/Cryptorial/static/js/main.dec12d01.chunk.js",
+    "main.js.map": "/Cryptorial/static/js/main.dec12d01.chunk.js.map",
     "runtime-main.js": "/Cryptorial/static/js/runtime-main.4aaa4ba6.js",
     "runtime-main.js.map": "/Cryptorial/static/js/runtime-main.4aaa4ba6.js.map",
     "static/css/2.418cb688.chunk.css": "/Cryptorial/static/css/2.418cb688.chunk.css",
-    "static/js/2.2331baa9.chunk.js": "/Cryptorial/static/js/2.2331baa9.chunk.js",
-    "static/js/2.2331baa9.chunk.js.map": "/Cryptorial/static/js/2.2331baa9.chunk.js.map",
+    "static/js/2.fa9800fa.chunk.js": "/Cryptorial/static/js/2.fa9800fa.chunk.js",
+    "static/js/2.fa9800fa.chunk.js.map": "/Cryptorial/static/js/2.fa9800fa.chunk.js.map",
     "index.html": "/Cryptorial/index.html",
     "static/css/2.418cb688.chunk.css.map": "/Cryptorial/static/css/2.418cb688.chunk.css.map",
     "static/css/main.fe90ba41.chunk.css.map": "/Cryptorial/static/css/main.fe90ba41.chunk.css.map",
-    "static/js/2.2331baa9.chunk.js.LICENSE.txt": "/Cryptorial/static/js/2.2331baa9.chunk.js.LICENSE.txt",
+    "static/js/2.fa9800fa.chunk.js.LICENSE.txt": "/Cryptorial/static/js/2.fa9800fa.chunk.js.LICENSE.txt",
     "static/media/blockchain.f9a1760d.jpg": "/Cryptorial/static/media/blockchain.f9a1760d.jpg",
     "static/media/economics.8d14d3db.jpg": "/Cryptorial/static/media/economics.8d14d3db.jpg",
     "static/media/hashing.cbc51e26.jpg": "/Cryptorial/static/media/hashing.cbc51e26.jpg",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.4aaa4ba6.js",
     "static/css/2.418cb688.chunk.css",
-    "static/js/2.2331baa9.chunk.js",
+    "static/js/2.fa9800fa.chunk.js",
     "static/css/main.fe90ba41.chunk.css",
-    "static/js/main.88c41b2b.chunk.js"
+    "static/js/main.dec12d01.chunk.js"
   ]
 }
